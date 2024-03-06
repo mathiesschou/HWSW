@@ -5,6 +5,7 @@
 #include "AlarmSystem.h"
 #include "RandomGenerator.h"
 #include "Sensor.h"
+#include "CalculationData.cpp"
 
 AlarmSystem::AlarmSystem() : state(inactive) {}
 
@@ -92,6 +93,7 @@ void AlarmSystem::systemController() {
 }
 
 //! Claculation for intrusion
+/*
 int AlarmSystem::calculationData(int s, int matrix[9][9]) {
     int sum = 0;
 
@@ -103,7 +105,7 @@ int AlarmSystem::calculationData(int s, int matrix[9][9]) {
     }
 
     return sum;
-}
+}*/
 
 //! Used for activating the system
 void AlarmSystem::activate() {
